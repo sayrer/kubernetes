@@ -42,7 +42,7 @@ genrule(
     cmd = """
 INPUT_DIR=`dirname $(location //pkg/util/sets/types:types.go)`; \
     $(location //cmd/libs/go2idl/set-gen) \
-    --input-dirs ./$$INPUT_DIR \
+    --input-dirs $$INPUT_DIR \
     --output-base $(GENDIR)/pkg/util \
     --go-header-file $(location //hack/boilerplate:boilerplate.go.txt) \
     --output-package sets
