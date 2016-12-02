@@ -32,7 +32,7 @@ go_library(
     deps = [
         "//vendor:cloud.google.com/go/internal",
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/context/ctxhttp",
+        "@org_golang_x_net//context/ctxhttp:go_default_library",
     ],
 )
 
@@ -7236,7 +7236,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/context/ctxhttp",
+        "@org_golang_x_net//context/ctxhttp:go_default_library",
         "//vendor:google.golang.org/api/gensupport",
         "//vendor:google.golang.org/api/googleapi",
     ],
@@ -7248,7 +7248,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/context/ctxhttp",
+        "@org_golang_x_net//context/ctxhttp:go_default_library",
         "//vendor:google.golang.org/api/gensupport",
         "//vendor:google.golang.org/api/googleapi",
     ],
@@ -7260,7 +7260,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/context/ctxhttp",
+        "@org_golang_x_net//context/ctxhttp:go_default_library",
         "//vendor:google.golang.org/api/gensupport",
         "//vendor:google.golang.org/api/googleapi",
     ],
@@ -7272,7 +7272,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/context/ctxhttp",
+        "@org_golang_x_net//context/ctxhttp:go_default_library",
         "//vendor:google.golang.org/api/gensupport",
         "//vendor:google.golang.org/api/googleapi",
     ],
@@ -7294,7 +7294,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/context/ctxhttp",
+        "@org_golang_x_net//context/ctxhttp:go_default_library",
         "//vendor:google.golang.org/api/googleapi",
     ],
 )
@@ -7607,7 +7607,7 @@ go_library(
     deps = [
         "//vendor:cloud.google.com/go/internal",
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/context/ctxhttp",
+        "@org_golang_x_net//context/ctxhttp:go_default_library",
     ],
 )
 
