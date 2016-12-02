@@ -27,7 +27,7 @@ go_library(
         "//vendor:github.com/docker/engine-api/client",
         "//vendor:github.com/docker/engine-api/types",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )
 

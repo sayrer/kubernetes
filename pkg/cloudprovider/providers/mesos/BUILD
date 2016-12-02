@@ -29,7 +29,7 @@ go_library(
         "//vendor:github.com/mesos/mesos-go/detector",
         "//vendor:github.com/mesos/mesos-go/detector/zoo",
         "//vendor:github.com/mesos/mesos-go/mesosproto",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
         "//vendor:gopkg.in/gcfg.v1",
     ],
 )
@@ -50,6 +50,6 @@ go_test(
         "//vendor:github.com/golang/glog",
         "//vendor:github.com/mesos/mesos-go/detector",
         "//vendor:github.com/mesos/mesos-go/mesosutil",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )

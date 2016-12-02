@@ -54,7 +54,7 @@ go_library(
         "//vendor:github.com/davecgh/go-spew/spew",
         "//vendor:github.com/golang/glog",
         "//vendor:github.com/ugorji/go/codec",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )
 

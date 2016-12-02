@@ -19,7 +19,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "//vendor:github.com/gogo/protobuf/proto",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
         "//vendor:google.golang.org/grpc",
     ],
 )

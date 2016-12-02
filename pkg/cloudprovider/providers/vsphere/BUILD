@@ -29,7 +29,7 @@ go_library(
         "//vendor:github.com/vmware/govmomi/vim25/mo",
         "//vendor:github.com/vmware/govmomi/vim25/soap",
         "//vendor:github.com/vmware/govmomi/vim25/types",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
         "//vendor:gopkg.in/gcfg.v1",
     ],
 )
@@ -43,6 +43,6 @@ go_test(
         "//pkg/cloudprovider:go_default_library",
         "//pkg/types:go_default_library",
         "//pkg/util/rand:go_default_library",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )

@@ -19,7 +19,7 @@ go_library(
         "//pkg/util/jsonpath:go_default_library",
         "//pkg/util/yaml:go_default_library",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
         "//vendor:golang.org/x/oauth2",
         "//vendor:golang.org/x/oauth2/google",
     ],

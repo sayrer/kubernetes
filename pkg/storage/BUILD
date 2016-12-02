@@ -42,7 +42,7 @@ go_library(
         "//pkg/util/wait:go_default_library",
         "//pkg/watch:go_default_library",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )
 
@@ -94,6 +94,6 @@ go_test(
         "//pkg/util/sets:go_default_library",
         "//pkg/util/wait:go_default_library",
         "//pkg/watch:go_default_library",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )

@@ -28,6 +28,6 @@ go_library(
         "//vendor:github.com/coreos/etcd/pkg/transport",
         "//vendor:github.com/coreos/etcd/pkg/types",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )

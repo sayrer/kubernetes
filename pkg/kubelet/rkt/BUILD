@@ -58,7 +58,7 @@ go_library(
         "//vendor:github.com/coreos/rkt/api/v1alpha",
         "//vendor:github.com/docker/engine-api/types",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
         "//vendor:google.golang.org/grpc",
     ],
 )
@@ -91,7 +91,7 @@ go_test(
         "//vendor:github.com/coreos/rkt/api/v1alpha",
         "//vendor:github.com/golang/mock/gomock",
         "//vendor:github.com/stretchr/testify/assert",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
         "//vendor:google.golang.org/grpc",
     ],
 )

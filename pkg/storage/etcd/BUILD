@@ -34,7 +34,7 @@ go_library(
         "//pkg/watch:go_default_library",
         "//vendor:github.com/coreos/etcd/client",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )
 
@@ -64,6 +64,6 @@ go_test(
         "//pkg/watch:go_default_library",
         "//vendor:github.com/coreos/etcd/client",
         "//vendor:github.com/stretchr/testify/assert",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )

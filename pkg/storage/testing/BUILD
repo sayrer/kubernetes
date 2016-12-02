@@ -27,6 +27,6 @@ go_library(
         "//pkg/storage:go_default_library",
         "//pkg/types:go_default_library",
         "//vendor:github.com/ugorji/go/codec",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )

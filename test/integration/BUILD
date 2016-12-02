@@ -25,6 +25,6 @@ go_library(
         "//test/integration/framework:go_default_library",
         "//vendor:github.com/coreos/etcd/client",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )

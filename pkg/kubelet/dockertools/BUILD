@@ -77,7 +77,7 @@ go_library(
         "//vendor:github.com/docker/go-connections/nat",
         "//vendor:github.com/golang/glog",
         "//vendor:github.com/google/cadvisor/info/v1",
-        "//vendor:golang.org/x/net/context",
+        "@org_golang_x_net//context:go_default_library",
     ],
 )
 
