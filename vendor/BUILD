@@ -236,7 +236,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "//vendor:github.com/PuerkitoBio/urlesc",
-        "//vendor:golang.org/x/net/idna",
+        "@org_golang_x_net//idna:go_default_library",
         "//vendor:golang.org/x/text/secure/precis",
         "//vendor:golang.org/x/text/unicode/norm",
     ],
@@ -7650,7 +7650,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "//vendor:github.com/PuerkitoBio/urlesc",
-        "//vendor:golang.org/x/net/idna",
+        "@org_golang_x_net//idna:go_default_library",
         "//vendor:golang.org/x/text/secure/precis",
         "//vendor:golang.org/x/text/unicode/norm",
     ],
