@@ -23,7 +23,7 @@ go_library(
     deps = [
         "//pkg/util/sets:go_default_library",
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/http2",
+        "@org_golang_x_net//http2:go_default_library",
     ],
 )
 

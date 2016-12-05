@@ -9,9 +9,9 @@ load("@io_bazel_rules_go//go:def.bzl", "go_repositories", "new_go_repository")
 go_repositories()
 
 new_go_repository(
-        name = "org_golang_x_net",
-        importpath="golang.org/x/net",
-        commit="f4b625ec9b21d620bb5ce57f2dfc3e08ca97fce6"
+  name = "org_golang_x_net",
+  importpath="golang.org/x/net",
+  commit="f4b625ec9b21d620bb5ce57f2dfc3e08ca97fce6"
 )
 
 # for building docker base images
