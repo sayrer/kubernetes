@@ -6931,21 +6931,48 @@ go_library(
     ],
     tags = ["automanaged"],
     deps = [
-        "//vendor:golang.org/x/net/http2/hpack",
+        "@org_golang_x_net//http2/hpack:go_default_library",
         "//vendor:golang.org/x/net/lex/httplex",
     ],
 )
 
-go_library(
-    name = "golang.org/x/net/http2/hpack",
-    srcs = [
-        "golang.org/x/net/http2/hpack/encode.go",
-        "golang.org/x/net/http2/hpack/hpack.go",
-        "golang.org/x/net/http2/hpack/huffman.go",
-        "golang.org/x/net/http2/hpack/tables.go",
-    ],
-    tags = ["automanaged"],
-)
+#go_library(
+#    name = "golang.org/x/net/http2",
+#    srcs = [
+#        "golang.org/x/net/http2/client_conn_pool.go",
+#        "golang.org/x/net/http2/configure_transport.go",
+#        "golang.org/x/net/http2/errors.go",
+#        "golang.org/x/net/http2/fixed_buffer.go",
+#        "golang.org/x/net/http2/flow.go",
+#        "golang.org/x/net/http2/frame.go",
+#        "golang.org/x/net/http2/go16.go",
+#        "golang.org/x/net/http2/go17.go",
+#        "golang.org/x/net/http2/gotrack.go",
+#        "golang.org/x/net/http2/headermap.go",
+#        "golang.org/x/net/http2/http2.go",
+#        "golang.org/x/net/http2/pipe.go",
+#        "golang.org/x/net/http2/server.go",
+#        "golang.org/x/net/http2/transport.go",
+#        "golang.org/x/net/http2/write.go",
+#        "golang.org/x/net/http2/writesched.go",
+#    ],
+#    tags = ["automanaged"],
+#    deps = [
+#        "@org_golang_x_net//http2/hpack:go_default_library",
+#        "//vendor:golang.org/x/net/lex/httplex",
+#    ],
+#)
+#
+#go_library(
+#    name = "golang.org/x/net/http2/hpack",
+#    srcs = [
+#        "golang.org/x/net/http2/hpack/encode.go",
+#        "golang.org/x/net/http2/hpack/hpack.go",
+#        "golang.org/x/net/http2/hpack/huffman.go",
+#        "golang.org/x/net/http2/hpack/tables.go",
+#    ],
+#    tags = ["automanaged"],
+#)
 
 go_library(
     name = "golang.org/x/net/idna",
@@ -7423,7 +7450,7 @@ go_library(
     deps = [
         "//vendor:github.com/golang/protobuf/proto",
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/http2",
+        "@org_golang_x_net//http2:go_default_library",
         "//vendor:golang.org/x/net/trace",
         "//vendor:google.golang.org/grpc/codes",
         "//vendor:google.golang.org/grpc/credentials",
@@ -7503,8 +7530,8 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "@org_golang_x_net//context:go_default_library",
-        "//vendor:golang.org/x/net/http2",
-        "//vendor:golang.org/x/net/http2/hpack",
+        "@org_golang_x_net//http2:go_default_library",
+        "@org_golang_x_net//http2/hpack:go_default_library",
         "//vendor:golang.org/x/net/trace",
         "//vendor:google.golang.org/grpc/codes",
         "//vendor:google.golang.org/grpc/credentials",
@@ -8187,7 +8214,7 @@ go_library(
     ],
     tags = ["automanaged"],
     deps = [
-        "//vendor:golang.org/x/net/http2/hpack",
+        "@org_golang_x_net//http2/hpack:go_default_library",
         "//vendor:golang.org/x/net/lex/httplex",
     ],
 )
@@ -10838,7 +10865,7 @@ go_library(
     tags = ["automanaged"],
     deps = [
         "//vendor:github.com/golang/glog",
-        "//vendor:golang.org/x/net/http2",
+        "@org_golang_x_net//http2:go_default_library",
         "//vendor:k8s.io/client-go/pkg/util/sets",
     ],
 )
